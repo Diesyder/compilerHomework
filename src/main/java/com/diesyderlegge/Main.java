@@ -9,12 +9,12 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.print("本程序可用于判断输入内容是否为小数。");
         System.out.print("请输入要判断的数值：");
         String input = scan.nextLine();
-        int len = input.length();
 
         // 获得判断状态
-        String state = judgeNum(input, len);
+        String state = judgeNum(input, input.length());
 
         // 输出返还的状态
         System.out.print("判断结果：");
